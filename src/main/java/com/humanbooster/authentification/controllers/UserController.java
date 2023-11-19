@@ -82,6 +82,9 @@ public class UserController {
                                             "  \"lastname\": \"TOTO\",\n" +
                                             "  \"firstname\": \"Toto\",\n" +
                                             "  \"email\": \"hello@mail.fr\",\n" +
+                                            "  \"street_number\": \"56\",\n" +
+                                            "  \"street_name\": \"place Jaude\",\n" +
+                                            "  \"zip_code\": \"63000\",\n" +
                                             "  \"country\": \"FRANCE\",\n" +
                                             "  \"password\": \"123\",\n" +
                                             "  \"roles\": [\n" +
@@ -119,6 +122,9 @@ public class UserController {
                                             "  \"lastname\": \"TOTO\",\n" +
                                             "  \"firstname\": \"Toto\",\n" +
                                             "  \"email\": \"hello@mail.fr\",\n" +
+                                            "  \"street_number\": \"56\",\n" +
+                                            "  \"street_name\": \"place Jaude\",\n" +
+                                            "  \"zip_code\": \"63000\",\n" +
                                             "  \"country\": \"FRANCE\",\n" +
                                             "  \"password\": \"123\",\n" +
                                             "  \"roles\": [\n" +
@@ -172,5 +178,6 @@ public class UserController {
         }
 
     }
+
 }
 

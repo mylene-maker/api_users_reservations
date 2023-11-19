@@ -45,6 +45,9 @@ public class DataLoaderApplication {
                 user.setLastname("Admin");
                 user.setPassword("admin");
                 user.setEmail("admin@admin.com");
+                user.setStreet_number(26);
+                user.setStreet_name("Boulevard des crabes");
+                user.setZip_code("63000");
                 user.setCountry("FRANCE");
 
                 user.addRole(roleUser);
@@ -59,6 +62,9 @@ public class DataLoaderApplication {
                 user2.setLastname("Test");
                 user2.setPassword("Test1234");
                 user2.setEmail("test@test.com");
+                user2.setStreet_number(1);
+                user2.setStreet_name("Avenue de Lune");
+                user2.setZip_code("75500");
                 user2.setCountry("FRANCE");
 
                 user2.addRole(roleUser);
@@ -72,6 +78,9 @@ public class DataLoaderApplication {
                 user3.setLastname("Tata");
                 user3.setPassword("Tata1234");
                 user3.setEmail("tata@tata.com");
+                user3.setStreet_number(96);
+                user3.setStreet_name("Rue soley");
+                user3.setZip_code("75500");
                 user3.setCountry("ESPAGNE");
 
                 user3.addRole(roleUser);
@@ -85,6 +94,9 @@ public class DataLoaderApplication {
                 user4.setLastname("Toto");
                 user4.setPassword("Toto1234");
                 user4.setEmail("toto@toto.com");
+                user4.setStreet_number(9);
+                user4.setStreet_name("Impasse des Grues");
+                user4.setZip_code("69001");
                 user4.setCountry("CHINE");
 
                 user4.addRole(roleUser);
