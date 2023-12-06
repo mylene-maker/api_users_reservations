@@ -15,9 +15,6 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
     public User  findByEmail(String email);
 
-    @Query(value = "FROM User WHERE id != :id AND email = :email")
-    public List<User> findByEmailWithoutId(String email, Long id);
-
     @Query("From User u JOIN u.roles as rolList WHERE u.email = :username AND rolList.roleName = 'ADMIN'")
     public User findByUsernameAndAdminRole(String username);
 }

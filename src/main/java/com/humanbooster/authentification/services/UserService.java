@@ -33,7 +33,6 @@ public class UserService {
     }
 
     public void removeUser(User user){
-
         this.userRepository.delete(user);
     }
 
