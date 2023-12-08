@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,9 +19,10 @@ public class Command {
     private Boolean payment = false;
     @Column(nullable = true)
     private String remarque;
-//    @OneToMany(mappedBy = "command")
+
+    @OneToMany(mappedBy = "command")
 //    @JsonIgnore
-//    private List<Reservation> reservations;
+    private List<Reservation> reservations;
 
     @ManyToOne
     @JsonIgnore
@@ -30,7 +32,7 @@ public class Command {
     public Command(@NotNull(message = "Veuillez indiquer si la commande est payée") Boolean payment, String remarque, User user) {
         this.payment = payment;
         this.remarque = remarque;
-//        this.reservations = new ArrayList<>();
+        this.reservations = new ArrayList<>();
 //        this.user = user;
     }
 
@@ -38,12 +40,12 @@ public class Command {
         this.id = id;
         this.payment = payment;
         this.remarque = remarque;
-//        this.reservations = new ArrayList<>();
-//        this.user = user;
+        this.reservations = new ArrayList<>();
+        this.user = user;
     }
 
     public Command() {
-//        this.reservations = new ArrayList<Reservation>();
+        this.reservations = new ArrayList<Reservation>();
     }
 
     public Boolean getPayment() {
@@ -54,17 +56,21 @@ public class Command {
         this.payment = payment;
     }
 
-    public void setReservations(List<Reservation> reservations) {
+//    public void setReservations(List<Reservation> reservations) {
 //        this.reservations = reservations;
+//    }
+
+    public List<Reservation> getReservations() {
+        return reservations;
     }
 
-//    public User getUser() {
-//        return user;
-//    }
+    public User getUser() {
+        return user;
+    }
 
-//    public void setUser(User customer) {
-//        this.user = user;
-//    }
+    public void setUser(User customer) {
+        this.user = user;
+    }
 
     public String getRemarque() {
         return remarque;
@@ -74,20 +80,20 @@ public class Command {
         this.remarque = remarque;
     }
 
-//    public User getCustomer() {
-//        return user;
-//    }
+    public User getCustomer() {
+        return user;
+    }
 
-//    public void setCustomer(User customer) {
-//        this.user = customer;
-//    }
+    public void setCustomer(User customer) {
+        this.user = customer;
+    }
 
     public void addReservation(Reservation reservation){
-//        this.reservations.add(reservation);
+        this.reservations.add(reservation);
     }
 
     public void removeReservation(Reservation reservation){
-//        this.reservations.remove(reservation);
+        this.reservations.remove(reservation);
     }
 
 

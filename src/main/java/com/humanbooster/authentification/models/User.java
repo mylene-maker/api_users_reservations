@@ -51,6 +51,7 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role> roles;
 
+    @JsonIgnore
     @OneToMany(targetEntity = Command.class,
               fetch = FetchType.EAGER, mappedBy = "user")
     private List<Command> commands;

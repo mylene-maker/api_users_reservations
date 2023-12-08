@@ -1,5 +1,6 @@
 package com.humanbooster.authentification.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
@@ -29,8 +30,8 @@ public class Reservation implements Serializable {
     @NotNull(message = "Veuillez choisir une option")
     private String equipment;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToOne
-
     private Command command;
 
     public Reservation(int id, @NotNull(message = "Veuillez choisir la ligne") Integer lane, Integer column, Date date_to, @NotNull(message = "Veuillez indiquer si la commande est acceptée") boolean isAccepted, @NotNull(message = "Veuillez choisir une option") String equipment, Command command) {

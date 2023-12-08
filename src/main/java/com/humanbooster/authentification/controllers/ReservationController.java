@@ -86,6 +86,12 @@ public class ReservationController {
         if (reservationUpdateFields.containsKey("accepted")) {
             reservation.setAccepted((Boolean) reservationUpdateFields.get("accepted"));
         }
+        if (reservationUpdateFields.containsKey("column")) {
+            Integer columnValue = (Integer) reservationUpdateFields.get("column");
+
+            reservation.setColumn(columnValue);
+
+        }
 
         // Ajoutez d'autres champs selon vos besoins
 
