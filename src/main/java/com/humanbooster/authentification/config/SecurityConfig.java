@@ -31,7 +31,6 @@ public class SecurityConfig {
     @Autowired
     AuthenticationEntryPoint unauthorizedHandler;
 
-
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity httpSecurity) throws Exception {
         AuthenticationManagerBuilder authenticationManagerBuilder = httpSecurity

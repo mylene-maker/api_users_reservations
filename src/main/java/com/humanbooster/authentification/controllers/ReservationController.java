@@ -65,6 +65,8 @@ public class ReservationController {
 
     }
 
+    //*****************    Patch ! Mettre à jour les informations de certains champs d'une reservation existant en fonction de son Id  ********************//
+
     @PatchMapping(value = "/{reservation}", consumes = "application/json", produces = "application/json")
     @Operation(summary = "Modifie les champs d'une reservation en fonction de son Id")
     @io.swagger.v3.oas.annotations.parameters.RequestBody(required = true, content = @Content(
@@ -92,8 +94,6 @@ public class ReservationController {
             reservation.setColumn(columnValue);
 
         }
-
-        // Ajoutez d'autres champs selon vos besoins
 
         // Enregistrez la mise à jour
         reservation = this.reservationService.saveReservation(reservation);
