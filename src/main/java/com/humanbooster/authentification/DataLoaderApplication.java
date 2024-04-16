@@ -39,12 +39,12 @@ public class DataLoaderApplication {
                 roleService.saveRole(roleUser);
             }
 
-            if (userService.findByEmail("admin@admin.com")==null){
+            if (userService.findByEmail("mylene_said@hotmail.fr")==null){
                 User user = new User();
-                user.setFirstname("Admin");
-                user.setLastname("Admin");
-                user.setPassword("admin");
-                user.setEmail("admin@admin.com");
+                user.setFirstname("Mylène");
+                user.setLastname("SAID OUSSENI");
+                user.setPassword("azerty123");
+                user.setEmail("mylene_said@hotmail.fr");
                 user.setStreet_number(26);
                 user.setStreet_name("Boulevard des crabes");
                 user.setZip_code("63000");
@@ -56,12 +56,12 @@ public class DataLoaderApplication {
                 userService.saveUser(user);
             }
 
-            if (userService.findByEmail("test@test.com")==null){
+            if (userService.findByEmail("raissasaid@outlook.com")==null){
                 User user2 = new User();
-                user2.setFirstname("Test");
-                user2.setLastname("Test");
-                user2.setPassword("Test1234");
-                user2.setEmail("test@test.com");
+                user2.setFirstname("Raissa");
+                user2.setLastname("SAID OUSSENI");
+                user2.setPassword("azerty123");
+                user2.setEmail("raissasaid@outlook.com");
                 user2.setStreet_number(1);
                 user2.setStreet_name("Avenue de Lune");
                 user2.setZip_code("75500");
@@ -72,12 +72,12 @@ public class DataLoaderApplication {
                 userService.saveUser(user2);
             }
 
-            if (userService.findByEmail("tata@tata.com")==null){
+            if (userService.findByEmail("mymilabel@live.fr")==null){
                 User user3 = new User();
-                user3.setFirstname("Tata");
-                user3.setLastname("Tata");
-                user3.setPassword("Tata1234");
-                user3.setEmail("tata@tata.com");
+                user3.setFirstname("Mathilda");
+                user3.setLastname("RAMIREZ");
+                user3.setPassword("azerty123");
+                user3.setEmail("mymilabel@live.fr");
                 user3.setStreet_number(96);
                 user3.setStreet_name("Rue soley");
                 user3.setZip_code("75500");
@@ -88,12 +88,12 @@ public class DataLoaderApplication {
                 userService.saveUser(user3);
             }
 
-            if (userService.findByEmail("toto@toto.com")==null){
+            if (userService.findByEmail("mymilabel@gmail.com")==null){
                 User user4 = new User();
-                user4.setFirstname("Toto");
-                user4.setLastname("Toto");
-                user4.setPassword("Toto1234");
-                user4.setEmail("toto@toto.com");
+                user4.setFirstname("Boem-Soeh");
+                user4.setLastname("YANG");
+                user4.setPassword("azerty123");
+                user4.setEmail("mymilabel@gmail.com");
                 user4.setStreet_number(9);
                 user4.setStreet_name("Impasse des Grues");
                 user4.setZip_code("69001");

@@ -18,8 +18,8 @@ public class ApiDocumentationConfiguration {
                         addList("Bearer Authentication"))
                 .components(new Components().addSecuritySchemes
                         ("Bearer Authentication", createAPIKeyScheme()))
-                .info(new Info().title("Business Case")
-                        .description("Api de gestion des Clients")
+                .info(new Info().title("Sunset Beach")
+                        .description("Api de gestion des Clients et réservations")
                         .version("0.0.1").contact(new Contact().name("Mylene SAID OUSSENI")
                                 .email( "mylene_said@hotmail.fr").url(""))
                          );
